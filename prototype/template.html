@@ -1,0 +1,398 @@
+<title>Skatteguiden Onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  /* page chrome — neutrals biased toward the brand's blue-violet */
+  --ground:#F1F2F7; --panel:#FFFFFF; --chrome-ink:#24262F; --chrome-muted:#6E7185;
+  --hairline:#DFE1EC; --chrome-accent:#6B7AFF; --bezel:#1A1B22; --bezel-edge:#34363F;
+  --shadow:0 24px 60px -18px rgba(28,31,64,.34), 0 2px 8px rgba(28,31,64,.08);
+  /* Skatteguiden — sampled from konto.skatteguiden.dk and the app screenshots */
+  --sg-bg:#FFFFFF; --sg-surface:#F9F9F9; --sg-tint:#E5EDFF; --sg-tint-plus:#EAE0FF;
+  --sg-primary:#6B7AFF; --sg-purple:#9563FF; --sg-mint:#4ED3B4; --sg-ink:#12131A;
+  --sg-ink2:#292A35; --sg-muted:#666666; --sg-faint:#888888; --sg-border:#E4E4E9;
+  --sg-green:#2C622C;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#111219; --panel:#181A22; --chrome-ink:#E8E9F0; --chrome-muted:#8C90A6;
+  --hairline:#282A36; --bezel:#000000; --bezel-edge:#3A3C46;
+  --shadow:0 24px 60px -18px rgba(0,0,0,.7), 0 2px 8px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{
+  --ground:#111219; --panel:#181A22; --chrome-ink:#E8E9F0; --chrome-muted:#8C90A6;
+  --hairline:#282A36; --bezel:#000000; --bezel-edge:#3A3C46;
+  --shadow:0 24px 60px -18px rgba(0,0,0,.7), 0 2px 8px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--chrome-ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  padding-inline:16px;padding-block:28px 40px;
+}
+.wrap{max-width:980px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);
+  gap:34px;align-items:start}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr);gap:20px}}
+
+/* ---- chrome ---- */
+.masthead{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:baseline;
+  justify-content:space-between;margin-bottom:4px}
+.masthead h1{margin:0;font-size:19px;font-weight:650;letter-spacing:-.01em}
+.masthead p{margin:0;font-size:13px;color:var(--chrome-muted);max-width:52ch}
+.eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--chrome-muted)}
+
+.rail{position:sticky;top:env(safe-area-inset-top,0px);display:flex;flex-direction:column;gap:2px}
+.rail .eyebrow{padding:0 10px 10px}
+.step{display:flex;gap:11px;align-items:center;width:100%;text-align:left;cursor:pointer;
+  background:none;border:0;border-radius:9px;padding:9px 10px;color:var(--chrome-muted);
+  font:inherit;font-size:13px;line-height:1.3}
+.step:hover{background:color-mix(in srgb,var(--chrome-accent) 8%,transparent);color:var(--chrome-ink)}
+.step[aria-current="true"]{background:color-mix(in srgb,var(--chrome-accent) 13%,transparent);
+  color:var(--chrome-ink);font-weight:600}
+.step .num{flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;
+  font-size:10.5px;font-weight:700;background:var(--hairline);color:var(--chrome-muted)}
+.step[aria-current="true"] .num{background:var(--chrome-accent);color:#fff}
+.step.done .num{background:color-mix(in srgb,var(--chrome-accent) 26%,transparent);
+  color:var(--chrome-ink)}
+@media (max-width:900px){
+  .rail{position:static;flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:4px;
+    scrollbar-width:thin}
+  .rail .eyebrow{display:none}
+  .step{width:auto;flex:none;white-space:nowrap;background:var(--panel);
+    border:1px solid var(--hairline)}
+}
+
+.rail hr{border:0;border-top:1px solid var(--hairline);margin:10px 10px 8px;width:calc(100% - 20px)}
+.rail .sect{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--chrome-muted);padding:0 10px 7px;margin:0}
+@media (max-width:900px){.rail hr{display:none}.rail .sect{display:none}}
+.timeline{display:flex;flex-direction:column;gap:0}
+.tlrow{display:grid;grid-template-columns:32px 1fr;column-gap:10px;position:relative}
+.tlrow+.tlrow{margin-top:18px}
+.tlrow .chip{grid-column:1;width:32px;height:32px;border-radius:50%;display:grid;
+  place-items:center;background:var(--sg-tint);color:var(--sg-primary);z-index:1}
+.tlrow.now .chip{background:var(--sg-primary);color:#fff}
+.tlrow:not(:last-child)::before{content:"";position:absolute;left:14px;top:20px;bottom:-24px;
+  width:4px;border-radius:2px;
+  background:linear-gradient(180deg,#6B7AFF 0%,rgba(107,122,255,.22) 100%)}
+.tlrow .txt{grid-column:2;display:flex;flex-direction:column;gap:4px;padding-top:1px}
+.save{display:flex;flex-direction:column;gap:5px;background:var(--sg-tint);border-radius:16px;
+  padding:17px 18px}
+.save .big{display:flex;gap:5px;align-items:baseline}
+.save .big b{font-size:30px;font-weight:700;letter-spacing:-.015em;
+  font-variant-numeric:tabular-nums;color:var(--sg-ink)}
+.save .big span{font-size:14px;color:var(--sg-muted)}
+.save p{margin:0;font-size:12.5px;line-height:1.42}
+.save .a{color:var(--sg-ink2)}
+.save .b{color:var(--sg-muted)}
+.offerline{font-size:15px;font-weight:700;text-align:center;margin:0;color:var(--sg-ink)}
+.offerline span{color:var(--sg-muted)}
+.offerline i{font-style:normal;color:var(--sg-border);padding:0 6px}
+.stage{display:flex;flex-direction:column;align-items:center;gap:18px;min-width:0}
+
+/* ---- device ---- */
+.device{width:390px;max-width:100%;aspect-ratio:390/844;background:var(--bezel);
+  border-radius:52px;padding:11px;box-shadow:var(--shadow);
+  outline:1px solid var(--bezel-edge);outline-offset:-1px;position:relative}
+.screen{position:relative;width:100%;height:100%;background:var(--sg-bg);border-radius:42px;
+  overflow:hidden;font-family:Poppins,ui-sans-serif,system-ui,sans-serif;color:var(--sg-ink);
+  display:flex;flex-direction:column;isolation:isolate}
+.notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:104px;height:27px;
+  border-radius:99px;background:#000;z-index:6}
+.statusbar{flex:none;display:flex;justify-content:space-between;align-items:center;
+  padding:13px 26px 0;font-size:12px;font-weight:600;color:var(--sg-ink);
+  font-variant-numeric:tabular-nums;z-index:5}
+.statusbar .sig{display:flex;gap:4px;align-items:center}
+.statusbar .bar{width:3px;border-radius:1px;background:var(--sg-ink)}
+
+.view{flex:1;min-height:0;position:relative}
+.pane{position:absolute;inset:0;display:none;flex-direction:column}
+.pane.on{display:flex}
+.scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+  padding:8px 20px 22px;display:flex;flex-direction:column;gap:22px;scrollbar-width:none}
+.scroll::-webkit-scrollbar{display:none}
+.pane[data-id="welcome"] .scroll{padding-top:16px;gap:24px}
+.footerbar{flex:none;background:var(--sg-bg);padding:14px 16px 18px;display:flex;
+  flex-direction:column;gap:9px;align-items:center;
+  box-shadow:0 -14px 22px -14px rgba(18,19,26,.16)}
+
+/* ---- Skatteguiden components ---- */
+.cta{width:100%;border:0;cursor:pointer;background:var(--sg-primary);color:#fff;
+  border-radius:999px;padding:16px 18px;font-family:inherit;font-size:14px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;transition:filter .14s ease,transform .14s ease}
+.cta:hover{filter:brightness(1.06)}
+.cta:active{transform:scale(.988)}
+.legal{font-size:10.5px;color:var(--sg-faint);text-align:center;line-height:1.45;margin:0}
+.legalrow{display:flex;gap:11px;align-items:center;justify-content:center}
+.linky{background:none;border:0;padding:0;cursor:pointer;font:inherit;font-size:10.5px;
+  color:var(--sg-faint);text-decoration:underline;text-underline-offset:2px}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;flex:none}
+.iconbtn{width:38px;height:38px;border:0;background:none;cursor:pointer;display:grid;
+  place-items:center;border-radius:50%;color:var(--sg-ink);padding:0}
+.iconbtn:hover{background:var(--sg-surface)}
+.iconbtn.right{margin-left:auto;color:var(--sg-faint)}
+.pill{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--sg-faint);background:var(--sg-surface);border-radius:999px;padding:6px 11px}
+
+h2.h1{font-size:26px;line-height:1.19;font-weight:700;margin:0;letter-spacing:-.015em;
+  text-wrap:balance}
+h2.h1 em{font-style:normal;color:var(--sg-primary)}
+.sub{font-size:14px;line-height:1.5;color:var(--sg-muted);margin:0}
+.h3{font-size:15.5px;font-weight:700;margin:0;line-height:1.3}
+.small{font-size:12.5px;line-height:1.42;color:var(--sg-muted);margin:0}
+.group{display:flex;flex-direction:column;gap:9px}
+.colhead{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--sg-faint);margin:0}
+
+.vrow{display:flex;gap:13px;align-items:center}
+.vico{flex:none;width:38px;height:38px;border-radius:11px;background:var(--sg-tint);
+  color:var(--sg-primary);display:grid;place-items:center}
+.vico.plum{background:var(--sg-tint-plus);color:var(--sg-purple)}
+.hero{width:100%;border-radius:18px;display:block}
+
+.choice{display:flex;gap:12px;align-items:center;justify-content:space-between;width:100%;
+  text-align:left;cursor:pointer;font:inherit;background:var(--sg-bg);
+  border:1px solid var(--sg-border);border-radius:14px;padding:15px 16px;color:inherit;
+  transition:background .14s ease,border-color .14s ease}
+.choice:hover{border-color:#C9CDE8}
+.choice[aria-checked="true"]{background:var(--sg-tint);border-color:var(--sg-primary)}
+.ring{flex:none;width:21px;height:21px;border-radius:50%;border:1px solid var(--sg-border);
+  display:grid;place-items:center;background:var(--sg-bg)}
+.choice[aria-checked="true"] .ring,.plan[aria-checked="true"] .ring{border-color:var(--sg-primary)}
+.ring i{width:10px;height:10px;border-radius:50%;background:transparent;display:block}
+.choice[aria-checked="true"] .ring i,.plan[aria-checked="true"] .ring i{background:var(--sg-primary)}
+
+.panel{border-radius:16px;padding:17px;display:flex;flex-direction:column;gap:12px}
+.panel.grey{background:var(--sg-surface)}
+.panel.tinted{background:var(--sg-tint)}
+.bullet{display:flex;gap:10px;align-items:center;font-size:14px;line-height:1.42;
+  color:var(--sg-ink2)}
+.bullet svg{flex:none}
+.bullet.mint svg{color:var(--sg-mint)}
+.bullet.off{color:var(--sg-muted)}
+.bullet.off svg{color:var(--sg-faint)}
+
+.step3{display:flex;gap:12px;align-items:flex-start}
+.step3 .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--sg-ink);color:#fff;
+  display:grid;place-items:center;font-size:13px;font-weight:700}
+.step3 .ttl{display:flex;gap:7px;align-items:center;color:var(--sg-primary)}
+.step3 .ttl span{color:var(--sg-ink)}
+.shieldwrap{width:60px;height:60px;border-radius:19px;background:var(--sg-tint);
+  color:var(--sg-primary);display:grid;place-items:center}
+.badge{display:inline-flex;gap:6px;align-items:center;align-self:flex-start;
+  background:var(--sg-tint);color:var(--sg-primary);border-radius:999px;padding:7px 12px;
+  font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+
+.plan{display:flex;gap:12px;align-items:center;justify-content:space-between;width:100%;
+  text-align:left;cursor:pointer;font:inherit;color:inherit;background:var(--sg-bg);
+  border:1px solid var(--sg-border);border-radius:16px;padding:15px 16px;
+  transition:background .14s ease,border-color .14s ease}
+.plan:hover{border-color:#C9CDE8}
+.plan[aria-checked="true"]{background:var(--sg-tint);border-color:var(--sg-primary)}
+.plan .body{display:flex;flex-direction:column;gap:4px;min-width:0}
+.plan .name{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{background:var(--sg-primary);color:#fff;border-radius:999px;padding:3px 8px;font-size:9px;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.price{display:flex;gap:5px;align-items:baseline}
+.price b{font-size:23px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.price span{font-size:12.5px;color:var(--sg-muted)}
+.peryear{font-size:10.5px;color:var(--sg-faint);margin:0}
+
+.cmp{background:var(--sg-surface);border-radius:16px;padding:14px 16px}
+.cmp table{width:100%;border-collapse:collapse;font-size:12.5px}
+.cmp th,.cmp td{padding:9px 0;text-align:center;vertical-align:middle}
+.cmp th:first-child,.cmp td:first-child{text-align:left;width:auto;line-height:1.35;
+  color:var(--sg-ink2);padding-right:8px}
+.cmp thead th{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--sg-faint);padding-bottom:8px}
+.cmp thead th.plus{color:var(--sg-primary)}
+.cmp tbody tr+tr{border-top:1px solid var(--sg-border)}
+.cmp td.v{width:52px}
+.cmp td.v svg{vertical-align:middle}
+.cmp .yes{color:var(--sg-green)}
+.cmp .yes.plus{color:var(--sg-primary)}
+.cmp .no{color:var(--sg-border)}
+.cmp .fee{font-weight:700;font-size:12px;color:var(--sg-ink2)}
+.cmp .fee.plus{color:var(--sg-primary)}
+
+/* purchase confirmation */
+.finish{position:absolute;inset:0;background:var(--sg-bg);display:none;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;padding:36px 28px;text-align:center;z-index:8}
+.finish.on{display:flex}
+.finish .tick{width:66px;height:66px;border-radius:50%;background:var(--sg-mint);color:#fff;
+  display:grid;place-items:center}
+
+/* ---- readout under the device ---- */
+.readout{width:390px;max-width:100%;background:var(--panel);border:1px solid var(--hairline);
+  border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.kv{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;align-items:baseline}
+.kv dt{color:var(--chrome-muted);margin:0}
+.kv dd{margin:0;font-weight:600;text-align:right}
+.readout .note{margin:0;font-size:11.5px;line-height:1.5;color:var(--chrome-muted);
+  border-top:1px solid var(--hairline);padding-top:10px}
+.restart{align-self:flex-start;background:none;border:1px solid var(--hairline);cursor:pointer;
+  font:inherit;font-size:12px;font-weight:600;color:var(--chrome-ink);border-radius:8px;
+  padding:7px 13px}
+.restart:hover{border-color:var(--chrome-accent);color:var(--chrome-accent)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(140%);
+  background:var(--chrome-ink);color:var(--ground);font-size:12.5px;font-weight:500;
+  padding:10px 16px;border-radius:999px;box-shadow:var(--shadow);z-index:40;
+  transition:transform .26s cubic-bezier(.22,1,.36,1);max-width:calc(100vw - 32px)}
+.toast.on{transform:translateX(-50%) translateY(0)}
+
+:where(button,[tabindex]):focus-visible{outline:2px solid var(--chrome-accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <h1>Skatteguiden — onboarding &amp; medlemskab</h1>
+      <p>Klikbar prototype af flowet. Vælg et mål på trin 1 og se overskriften ændre sig på trin 5 og på betalingssiden.</p>
+    </div>
+    <span class="eyebrow">Prototype · dansk</span>
+  </header>
+
+  <nav class="rail" id="rail" aria-label="Skærme">
+    <p class="eyebrow">Skærme</p>
+  </nav>
+
+  <div class="stage">
+    <div class="device">
+      <div class="screen">
+        <div class="notch" aria-hidden="true"></div>
+        <div class="statusbar" aria-hidden="true">
+          <span>9:41</span>
+          <span class="sig">
+            <span class="bar" style="height:5px"></span><span class="bar" style="height:7px"></span>
+            <span class="bar" style="height:9px"></span><span class="bar" style="height:11px"></span>
+          </span>
+        </div>
+        <div class="view" id="view">
+          <!--PANES-->
+          <div class="finish" id="done">
+            <span class="tick">__ICON_CheckCircle_34__</span>
+            <h2 class="h1" style="font-size:22px">Velkommen til Skatteguiden</h2>
+            <p class="sub">Her ville appen bede dig logge ind med MitID og hente dine tal fra SKAT.</p>
+            <p class="legal">I det rigtige flow afslutter <code>purchase</code> forløbet — der kan ikke vises skærme efter køb.</p>
+            <button class="restart" type="button" data-restart>Start forfra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="readout" aria-label="Flowets tilstand">
+      <dl class="kv" style="margin:0"><dt>Valgt mål (trin 1)</dt><dd id="ro-goal">Glemte fradrag</dd></dl>
+      <dl class="kv" style="margin:0"><dt>Valgt medlemskab</dt><dd id="ro-plan">Plus · 79 kr./md</dd></dl>
+      <p class="note">Målet styrer overskriften på <strong>Din plan</strong> og på <strong>betalingssiden</strong> — det er <code>switch</code>-teksten fra konfigurationen. Priser og funktioner er hentet fra skatteguiden.dk.</p>
+      <button class="restart" type="button" data-restart>Start forfra</button>
+    </section>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+  var SCREENS=["welcome","goal","pain","method","security","plan","paywall","offer"];
+  var LABELS=["Velkommen","Dit mål","Problemet","Sådan virker det","Sikkerhed","Din plan","Medlemskab","Årligt tilbud"];
+  var GOALS={
+    fradrag:{label:"Glemte fradrag",
+      planHead:'Vi starter med dine <em>glemte fradrag</em>.',
+      planSub:"Du sagde, du vil finde penge, du har til gode. Så begynder vi der.",
+      payHead:'Få fundet dine <em>glemte fradrag</em>'},
+    overblik:{label:"Overblik over min skat",
+      planHead:'Vi starter med dit <em>skatteoverblik</em>.',
+      planSub:"Du sagde, du vil forstå, hvad du betaler. Så begynder vi der.",
+      payHead:'Få dit fulde <em>skatteoverblik</em>'},
+    restskat:{label:"Undgå restskat",
+      planHead:'Vi starter med at forebygge <em>restskat</em>.',
+      planSub:"Du sagde, du vil betale det rigtige hele året. Så begynder vi der.",
+      payHead:'Slip for <em>restskat</em>'},
+    alt:{label:"Bare styr på det hele",
+      planHead:"Din plan er klar.",
+      planSub:"Lad os få styr på det hele.",
+      payHead:"Vælg dit medlemskab"}
+  };
+  var PLANS={plus:"Plus · 79 kr./md",standard:"Standard · 39 kr./md"};
+
+  var state={i:0,goal:"fradrag",plan:"plus"};
+  var view=document.getElementById("view");
+  var rail=document.getElementById("rail");
+  var done=document.getElementById("done");
+  var toastEl=document.getElementById("toast"), toastT;
+
+  function toast(msg){
+    toastEl.textContent=msg; toastEl.classList.add("on");
+    clearTimeout(toastT); toastT=setTimeout(function(){toastEl.classList.remove("on");},2600);
+  }
+  function panes(){return view.querySelectorAll(".pane");}
+
+  SCREENS.forEach(function(id,n){
+    if(id==="offer"){
+      rail.appendChild(document.createElement("hr"));
+      var h=document.createElement("p"); h.className="sect";
+      h.textContent="Separat flow"; rail.appendChild(h);
+    }
+    var b=document.createElement("button");
+    b.type="button"; b.className="step"; b.dataset.step=String(n);
+    b.innerHTML='<span class="num">'+(id==="offer"?"\u2726":(n+1))+'</span><span>'+LABELS[n]+'</span>';
+    b.addEventListener("click",function(){go(n);});
+    rail.appendChild(b);
+  });
+
+  function render(){
+    panes().forEach(function(p,n){p.classList.toggle("on",n===state.i);});
+    rail.querySelectorAll(".step").forEach(function(b,n){
+      b.setAttribute("aria-current",n===state.i?"true":"false");
+      b.classList.toggle("done",n<state.i&&SCREENS[state.i]!=="offer");
+    });
+    var g=GOALS[state.goal];
+    document.getElementById("plan-head").innerHTML=g.planHead;
+    document.getElementById("plan-sub").textContent=g.planSub;
+    document.getElementById("pay-head").innerHTML=g.payHead;
+    document.getElementById("ro-goal").textContent=g.label;
+    document.getElementById("ro-plan").textContent=PLANS[state.plan];
+    view.querySelectorAll("[data-goal]").forEach(function(el){
+      el.setAttribute("aria-checked",el.dataset.goal===state.goal?"true":"false");
+    });
+    view.querySelectorAll("[data-plan]").forEach(function(el){
+      el.setAttribute("aria-checked",el.dataset.plan===state.plan?"true":"false");
+    });
+    var sc=panes()[state.i].querySelector(".scroll");
+    if(sc) sc.scrollTop=0;
+  }
+  function go(n){
+    if(n<0||n>=SCREENS.length) return;
+    done.classList.remove("on"); state.i=n; render();
+  }
+
+  view.addEventListener("click",function(e){
+    var el=e.target.closest("[data-go],[data-back],[data-goal],[data-plan],[data-buy],[data-close],[data-link]");
+    if(!el) return;
+    if(el.hasAttribute("data-goal")){ state.goal=el.dataset.goal; render(); return; }
+    if(el.hasAttribute("data-plan")){ state.plan=el.dataset.plan; render(); return; }
+    if(el.hasAttribute("data-back")){ go(state.i-1); return; }
+    if(el.hasAttribute("data-go")){ go(SCREENS.indexOf(el.dataset.go)); return; }
+    if(el.hasAttribute("data-buy")){ done.classList.add("on"); return; }
+    if(el.hasAttribute("data-close")){ toast("Lukker forløbet — i appen ville brugeren lande på forsiden."); return; }
+    if(el.hasAttribute("data-link")){ toast(el.dataset.link); return; }
+  });
+
+  document.querySelectorAll("[data-restart]").forEach(function(b){
+    b.addEventListener("click",function(){ state.goal="fradrag"; state.plan="plus"; go(0); });
+  });
+
+  document.addEventListener("keydown",function(e){
+    if(e.target.closest("input,textarea")) return;
+    if(e.key==="ArrowRight") go(state.i+1);
+    if(e.key==="ArrowLeft") go(state.i-1);
+  });
+
+  render();
+})();
+</script>

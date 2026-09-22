@@ -1,0 +1,3049 @@
+{
+ "schemaVersion": 10,
+ "locales": [
+  {
+   "id": "da",
+   "code": "da",
+   "name": "Dansk"
+  }
+ ],
+ "defaultLocale": "da",
+ "variables": [],
+ "components": {},
+ "theme": {
+  "colors": [
+   {
+    "id": "bg",
+    "name": "Page",
+    "light": {
+     "hex": "#FFFFFF"
+    },
+    "dark": {
+     "hex": "#FFFFFF"
+    }
+   },
+   {
+    "id": "surface",
+    "name": "Surface",
+    "light": {
+     "hex": "#F9F9F9"
+    },
+    "dark": {
+     "hex": "#F9F9F9"
+    }
+   },
+   {
+    "id": "card",
+    "name": "Card",
+    "light": {
+     "hex": "#FFFFFF"
+    },
+    "dark": {
+     "hex": "#FFFFFF"
+    }
+   },
+   {
+    "id": "tint",
+    "name": "Blue tint",
+    "light": {
+     "hex": "#E5EDFF"
+    },
+    "dark": {
+     "hex": "#E5EDFF"
+    }
+   },
+   {
+    "id": "tintPlus",
+    "name": "Purple tint",
+    "light": {
+     "hex": "#EAE0FF"
+    },
+    "dark": {
+     "hex": "#EAE0FF"
+    }
+   },
+   {
+    "id": "primary",
+    "name": "Skatteguiden blue",
+    "light": {
+     "hex": "#6B7AFF"
+    },
+    "dark": {
+     "hex": "#6B7AFF"
+    }
+   },
+   {
+    "id": "purple",
+    "name": "Purple",
+    "light": {
+     "hex": "#9563FF"
+    },
+    "dark": {
+     "hex": "#9563FF"
+    }
+   },
+   {
+    "id": "mint",
+    "name": "Mint",
+    "light": {
+     "hex": "#4ED3B4"
+    },
+    "dark": {
+     "hex": "#4ED3B4"
+    }
+   },
+   {
+    "id": "ink",
+    "name": "Ink",
+    "light": {
+     "hex": "#12131A"
+    },
+    "dark": {
+     "hex": "#12131A"
+    }
+   },
+   {
+    "id": "ink2",
+    "name": "Ink soft",
+    "light": {
+     "hex": "#292A35"
+    },
+    "dark": {
+     "hex": "#292A35"
+    }
+   },
+   {
+    "id": "muted",
+    "name": "Muted",
+    "light": {
+     "hex": "#666666"
+    },
+    "dark": {
+     "hex": "#666666"
+    }
+   },
+   {
+    "id": "faint",
+    "name": "Faint",
+    "light": {
+     "hex": "#888888"
+    },
+    "dark": {
+     "hex": "#888888"
+    }
+   },
+   {
+    "id": "border",
+    "name": "Border",
+    "light": {
+     "hex": "#E4E4E9"
+    },
+    "dark": {
+     "hex": "#E4E4E9"
+    }
+   },
+   {
+    "id": "white",
+    "name": "White",
+    "light": {
+     "hex": "#FFFFFF"
+    },
+    "dark": {
+     "hex": "#FFFFFF"
+    }
+   },
+   {
+    "id": "green",
+    "name": "Check green",
+    "light": {
+     "hex": "#2C622C"
+    },
+    "dark": {
+     "hex": "#2C622C"
+    }
+   }
+  ],
+  "typography": [
+   {
+    "id": "h1",
+    "name": "H1",
+    "settings": {
+     "size": 28,
+     "weight": "bold",
+     "lineHeight": 34
+    }
+   },
+   {
+    "id": "h3",
+    "name": "H3",
+    "settings": {
+     "size": 17,
+     "weight": "bold",
+     "lineHeight": 23
+    }
+   },
+   {
+    "id": "body",
+    "name": "Body",
+    "settings": {
+     "size": 15,
+     "weight": "regular",
+     "lineHeight": 22
+    }
+   },
+   {
+    "id": "small",
+    "name": "Small",
+    "settings": {
+     "size": 13,
+     "weight": "regular",
+     "lineHeight": 18
+    }
+   },
+   {
+    "id": "legal",
+    "name": "Legal",
+    "settings": {
+     "size": 11,
+     "weight": "regular",
+     "lineHeight": 15
+    }
+   },
+   {
+    "id": "cta",
+    "name": "CTA",
+    "settings": {
+     "size": 15,
+     "weight": "bold",
+     "lineHeight": 20,
+     "letterSpacing": 0.6
+    }
+   },
+   {
+    "id": "price",
+    "name": "Price",
+    "settings": {
+     "size": 30,
+     "weight": "bold",
+     "lineHeight": 34
+    }
+   },
+   {
+    "id": "badge",
+    "name": "Badge",
+    "settings": {
+     "size": 11,
+     "weight": "bold",
+     "lineHeight": 14,
+     "letterSpacing": 0.4
+    }
+   },
+   {
+    "id": "col",
+    "name": "Column head",
+    "settings": {
+     "size": 9,
+     "weight": "bold",
+     "lineHeight": 12,
+     "letterSpacing": 0.3
+    }
+   },
+   {
+    "id": "offer",
+    "name": "Offer line",
+    "settings": {
+     "size": 15,
+     "weight": "bold",
+     "lineHeight": 20
+    }
+   }
+  ]
+ },
+ "_meta": {
+  "icons": [
+   {
+    "name": "Bell",
+    "weight": "regular",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z\"></path></svg>"
+   },
+   {
+    "name": "CalendarBlank",
+    "weight": "regular",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z\"></path></svg>"
+   },
+   {
+    "name": "Check",
+    "weight": "bold",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z\"></path></svg>"
+   },
+   {
+    "name": "CheckCircle",
+    "weight": "fill",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z\"></path></svg>"
+   },
+   {
+    "name": "Sparkle",
+    "weight": "regular",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z\"></path></svg>"
+   },
+   {
+    "name": "X",
+    "weight": "regular",
+    "raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z\"></path></svg>"
+   }
+  ],
+  "fonts": [],
+  "screens": {
+   "scr_annual": {
+    "products": [
+     {
+      "id": "da22cffe-64c4-487e-ade1-e229d76b5aa7",
+      "flowProductId": "89df01f2-4139-557e-8e68-3bcf26b98ece"
+     }
+    ]
+   }
+  }
+ },
+ "screens": [
+  {
+   "id": "scr_annual",
+   "props": {
+    "layout": {
+     "alignH": "start",
+     "alignV": "start",
+     "direction": "vertical",
+     "distribution": {
+      "gap": 20,
+      "type": "gap"
+     }
+    },
+    "safeArea": true,
+    "statusBar": true,
+    "scrollable": true,
+    "progressBar": {
+     "enabled": false
+    },
+    "statusBarTheme": "dark",
+    "fill": [
+     {
+      "type": "color",
+      "color": {
+       "type": "color-style",
+       "colorId": "bg"
+      }
+     }
+    ],
+    "padding": {
+     "top": 8,
+     "left": 20,
+     "right": 20,
+     "bottom": 196
+    }
+   },
+   "elements": {
+    "map": {
+     "el_019R": {
+      "id": "el_019R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "type": "space-between"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_016C": {
+      "id": "el_016C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_018B": {
+      "id": "el_018B",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fixed",
+        "value": 36
+       },
+       "height": {
+        "type": "fixed",
+        "value": 36
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Luk",
+      "interactions": [
+       {
+        "id": "int_018B",
+        "trigger": "tap",
+        "actions": [
+         {
+          "id": "act_001",
+          "type": "closeFlow"
+         }
+        ]
+       }
+      ]
+     },
+     "el_017C": {
+      "id": "el_017C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "X",
+        "size": 20,
+        "type": "phosphor",
+        "weight": "regular",
+        "color": {
+         "type": "color-style",
+         "colorId": "faint"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_022C": {
+      "id": "el_022C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_021C": {
+      "id": "el_021C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 6,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "tint"
+         }
+        }
+       ],
+       "padding": {
+        "top": 7,
+        "left": 12,
+        "right": 12,
+        "bottom": 7
+       },
+       "borderRadius": {
+        "tl": 9999,
+        "tr": 9999,
+        "bl": 9999,
+        "br": 9999
+       }
+      },
+      "states": [],
+      "caption": "Badge"
+     },
+     "el_020C": {
+      "id": "el_020C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "Sparkle",
+        "size": 13,
+        "type": "phosphor",
+        "weight": "regular",
+        "color": {
+         "type": "color-style",
+         "colorId": "primary"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_007T": {
+      "id": "el_007T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "badge"
+       },
+       "align": "left",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "SPAR 2 MÅNEDER",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "primary"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_008T": {
+      "id": "el_008T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "h1"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Betal årligt. Få 2 måneder gratis.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_009T": {
+      "id": "el_009T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Fuld adgang til Plus — til prisen for 10 måneder.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_024C": {
+      "id": "el_024C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 5,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "tint"
+         }
+        }
+       ],
+       "padding": {
+        "top": 17,
+        "left": 18,
+        "right": 18,
+        "bottom": 17
+       },
+       "borderRadius": {
+        "tl": 16,
+        "tr": 16,
+        "bl": 16,
+        "br": 16
+       }
+      },
+      "states": [],
+      "caption": "Besparelse"
+     },
+     "el_023C": {
+      "id": "el_023C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "end",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 5,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_010T": {
+      "id": "el_010T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "price"
+       },
+       "align": "left",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "790 kr.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_011T": {
+      "id": "el_011T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "/år",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_012T": {
+      "id": "el_012T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "small"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "I stedet for 948 kr. ved månedlig betaling.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink2"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_013T": {
+      "id": "el_013T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "small"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Svarer til ca. 66 kr./md — du sparer 158 kr. om året.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_015C": {
+      "id": "el_015C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 18,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Prøveperiode"
+     },
+     "el_005R": {
+      "id": "el_005R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 16,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "I dag"
+     },
+     "el_002C": {
+      "id": "el_002C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "absolute",
+        "top": 0,
+        "left": 0
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "primary"
+         }
+        }
+       ],
+       "padding": {
+        "top": 7,
+        "left": 7,
+        "right": 7,
+        "bottom": 7
+       },
+       "borderRadius": {
+        "tl": 100,
+        "tr": 100,
+        "bl": 100,
+        "br": 100
+       }
+      },
+      "states": [],
+      "caption": "Chip"
+     },
+     "el_001C": {
+      "id": "el_001C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "Check",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "bold",
+        "color": {
+         "type": "color-style",
+         "colorId": "white"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_003C": {
+      "id": "el_003C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fixed",
+        "value": 4
+       },
+       "height": {
+        "type": "auto"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "absolute",
+        "top": 20,
+        "left": 14,
+        "bottom": -24,
+        "zIndex": -10
+       },
+       "fill": [
+        {
+         "type": "gradient",
+         "angle": 180,
+         "stops": [
+          {
+           "color": {
+            "type": "hex",
+            "hex": "#6B7AFF",
+            "opacity": 100
+           },
+           "position": 0
+          },
+          {
+           "color": {
+            "type": "hex",
+            "hex": "#6B7AFF",
+            "opacity": 22
+           },
+           "position": 1
+          }
+         ]
+        }
+       ]
+      },
+      "states": [],
+      "caption": "Connector"
+     },
+     "el_004C": {
+      "id": "el_004C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 4,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "padding": {
+        "top": 0,
+        "left": 42,
+        "right": 0,
+        "bottom": 0
+       }
+      },
+      "states": []
+     },
+     "el_001T": {
+      "id": "el_001T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "h3"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "I dag",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_002T": {
+      "id": "el_002T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "small"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Fuld adgang til Plus. Du betaler 0 kr.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_010R": {
+      "id": "el_010R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 16,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Undervejs"
+     },
+     "el_007C": {
+      "id": "el_007C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "absolute",
+        "top": 0,
+        "left": 0
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "tint"
+         }
+        }
+       ],
+       "padding": {
+        "top": 7,
+        "left": 7,
+        "right": 7,
+        "bottom": 7
+       },
+       "borderRadius": {
+        "tl": 100,
+        "tr": 100,
+        "bl": 100,
+        "br": 100
+       }
+      },
+      "states": [],
+      "caption": "Chip"
+     },
+     "el_006C": {
+      "id": "el_006C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "Bell",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "regular",
+        "color": {
+         "type": "color-style",
+         "colorId": "primary"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_008C": {
+      "id": "el_008C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fixed",
+        "value": 4
+       },
+       "height": {
+        "type": "auto"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "absolute",
+        "top": 20,
+        "left": 14,
+        "bottom": -24,
+        "zIndex": -10
+       },
+       "fill": [
+        {
+         "type": "gradient",
+         "angle": 180,
+         "stops": [
+          {
+           "color": {
+            "type": "hex",
+            "hex": "#6B7AFF",
+            "opacity": 100
+           },
+           "position": 0
+          },
+          {
+           "color": {
+            "type": "hex",
+            "hex": "#6B7AFF",
+            "opacity": 22
+           },
+           "position": 1
+          }
+         ]
+        }
+       ]
+      },
+      "states": [],
+      "caption": "Connector"
+     },
+     "el_009C": {
+      "id": "el_009C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 4,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "padding": {
+        "top": 0,
+        "left": 42,
+        "right": 0,
+        "bottom": 0
+       }
+      },
+      "states": []
+     },
+     "el_003T": {
+      "id": "el_003T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "h3"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Undervejs",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_004T": {
+      "id": "el_004T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "small"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Du kan opsige når som helst i App Store.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_014R": {
+      "id": "el_014R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 16,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Efter 1 måned"
+     },
+     "el_012C": {
+      "id": "el_012C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "absolute",
+        "top": 0,
+        "left": 0
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "tint"
+         }
+        }
+       ],
+       "padding": {
+        "top": 7,
+        "left": 7,
+        "right": 7,
+        "bottom": 7
+       },
+       "borderRadius": {
+        "tl": 100,
+        "tr": 100,
+        "bl": 100,
+        "br": 100
+       }
+      },
+      "states": [],
+      "caption": "Chip"
+     },
+     "el_011C": {
+      "id": "el_011C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "CalendarBlank",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "regular",
+        "color": {
+         "type": "color-style",
+         "colorId": "primary"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_013C": {
+      "id": "el_013C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 4,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "padding": {
+        "top": 0,
+        "left": 42,
+        "right": 0,
+        "bottom": 0
+       }
+      },
+      "states": []
+     },
+     "el_005T": {
+      "id": "el_005T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "h3"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Efter 1 måned",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_006T": {
+      "id": "el_006T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "small"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "790 kr./år, hvis du ikke har opsagt.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_033C": {
+      "id": "el_033C",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 13,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "surface"
+         }
+        }
+       ],
+       "padding": {
+        "top": 18,
+        "left": 18,
+        "right": 18,
+        "bottom": 18
+       },
+       "borderRadius": {
+        "tl": 16,
+        "tr": 16,
+        "bl": 16,
+        "br": 16
+       }
+      },
+      "states": []
+     },
+     "el_014T": {
+      "id": "el_014T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "col"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Det får du med Plus",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "faint"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_026R": {
+      "id": "el_026R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Få rettet din skat automatisk"
+     },
+     "el_025C": {
+      "id": "el_025C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "CheckCircle",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "fill",
+        "color": {
+         "type": "color-style",
+         "colorId": "mint"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_015T": {
+      "id": "el_015T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Få rettet din skat automatisk",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink2"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_028R": {
+      "id": "el_028R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Vi indberetter dine fradrag gratis"
+     },
+     "el_027C": {
+      "id": "el_027C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "CheckCircle",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "fill",
+        "color": {
+         "type": "color-style",
+         "colorId": "mint"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_016T": {
+      "id": "el_016T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Vi indberetter dine fradrag gratis",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink2"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_030R": {
+      "id": "el_030R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Skatterådgivning inden for 2 hverdage"
+     },
+     "el_029C": {
+      "id": "el_029C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "CheckCircle",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "fill",
+        "color": {
+         "type": "color-style",
+         "colorId": "mint"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_017T": {
+      "id": "el_017T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Skatterådgivning inden for 2 hverdage",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink2"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_032R": {
+      "id": "el_032R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "En personlig opdatering hver måned"
+     },
+     "el_031C": {
+      "id": "el_031C",
+      "type": "icon",
+      "props": {
+       "icon": {
+        "name": "CheckCircle",
+        "size": 18,
+        "type": "phosphor",
+        "weight": "fill",
+        "color": {
+         "type": "color-style",
+         "colorId": "mint"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": []
+     },
+     "el_018T": {
+      "id": "el_018T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "body"
+       },
+       "align": "left",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "En personlig opdatering hver måned",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink2"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_034P": {
+      "id": "el_034P",
+      "type": "product",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "visibility": {
+        "type": "hidden"
+       },
+       "groupId": "sgoffer",
+       "default": true,
+       "product": {
+        "id": "da22cffe-64c4-487e-ade1-e229d76b5aa7"
+       },
+       "caption": "Product attach point (hidden)"
+      },
+      "states": [
+       {
+        "id": "selected",
+        "type": "system"
+       }
+      ]
+     },
+     "el_039F": {
+      "id": "el_039F",
+      "type": "footer",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "end",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "white"
+         }
+        }
+       ],
+       "padding": {
+        "top": 16,
+        "left": 16,
+        "right": 16,
+        "bottom": 14
+       }
+      },
+      "states": [],
+      "caption": "Bottom bar"
+     },
+     "el_020T": {
+      "id": "el_020T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "offer"
+       },
+       "align": "center",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "0 kr. i dag",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "ink"
+              }
+             }
+            },
+            {
+             "text": "  ·  ",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "border"
+              }
+             }
+            },
+            {
+             "text": "derefter 790 kr./år",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "muted"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_035B": {
+      "id": "el_035B",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       },
+       "fill": [
+        {
+         "type": "color",
+         "color": {
+          "type": "color-style",
+          "colorId": "primary"
+         }
+        }
+       ],
+       "padding": {
+        "top": 17,
+        "left": 20,
+        "right": 20,
+        "bottom": 17
+       },
+       "borderRadius": {
+        "tl": 9999,
+        "tr": 9999,
+        "bl": 9999,
+        "br": 9999
+       }
+      },
+      "states": [],
+      "caption": "CTA",
+      "interactions": [
+       {
+        "id": "int_035B",
+        "trigger": "tap",
+        "actions": [
+         {
+          "id": "act_002",
+          "type": "purchase",
+          "payload": {
+           "product": {
+            "type": "var",
+            "variableId": "sgoffer.selectedProduct"
+           }
+          }
+         }
+        ]
+       }
+      ]
+     },
+     "el_021T": {
+      "id": "el_021T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "cta"
+       },
+       "align": "center",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "START MIN GRATIS MÅNED",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "white"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_022T": {
+      "id": "el_022T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "legal"
+       },
+       "align": "center",
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Ingen binding. Opsig når som helst i App Store.",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "faint"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_038R": {
+      "id": "el_038R",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "fill"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "center",
+        "alignV": "center",
+        "direction": "horizontal",
+        "distribution": {
+         "gap": 10,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Juridisk"
+     },
+     "el_036B": {
+      "id": "el_036B",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Gendan køb",
+      "interactions": [
+       {
+        "id": "int_036B",
+        "trigger": "tap",
+        "actions": [
+         {
+          "id": "act_003",
+          "type": "restorePurchases"
+         }
+        ]
+       }
+      ]
+     },
+     "el_023T": {
+      "id": "el_023T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "legal"
+       },
+       "align": "center",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Gendan køb",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "faint"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_024T": {
+      "id": "el_024T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "legal"
+       },
+       "align": "left",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "·",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "border"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     },
+     "el_037B": {
+      "id": "el_037B",
+      "type": "stack",
+      "props": {
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": {
+        "alignH": "start",
+        "alignV": "start",
+        "direction": "vertical",
+        "distribution": {
+         "gap": 0,
+         "type": "gap"
+        }
+       },
+       "position": {
+        "type": "relative"
+       }
+      },
+      "states": [],
+      "caption": "Vilkår",
+      "interactions": [
+       {
+        "id": "int_037B",
+        "trigger": "tap",
+        "actions": [
+         {
+          "id": "act_004",
+          "type": "openUrl",
+          "payload": {
+           "url": "https://www.skatteguiden.dk/juridiske-dokumenter"
+          }
+         }
+        ]
+       }
+      ]
+     },
+     "el_025T": {
+      "id": "el_025T",
+      "type": "text",
+      "props": {
+       "font": {
+        "preset": "legal"
+       },
+       "align": "center",
+       "width": {
+        "type": "hug"
+       },
+       "height": {
+        "type": "hug"
+       },
+       "layout": "auto-height",
+       "content": {
+        "values": {
+         "da": [
+          {
+           "type": "paragraph",
+           "content": [
+            {
+             "text": "Vilkår og privatliv",
+             "type": "text",
+             "attrs": {
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": {
+               "type": "color-style",
+               "colorId": "faint"
+              }
+             }
+            }
+           ]
+          }
+         ]
+        },
+        "_localizable": true
+       },
+       "position": {
+        "type": "relative"
+       },
+       "decoration": "none"
+      },
+      "states": []
+     }
+    },
+    "hierarchy": {
+     "id": "root",
+     "children": [
+      {
+       "id": "el_019R",
+       "children": [
+        {
+         "id": "el_016C"
+        },
+        {
+         "id": "el_018B",
+         "children": [
+          {
+           "id": "el_017C"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "el_022C",
+       "children": [
+        {
+         "id": "el_021C",
+         "children": [
+          {
+           "id": "el_020C"
+          },
+          {
+           "id": "el_007T"
+          }
+         ]
+        },
+        {
+         "id": "el_008T"
+        },
+        {
+         "id": "el_009T"
+        }
+       ]
+      },
+      {
+       "id": "el_024C",
+       "children": [
+        {
+         "id": "el_023C",
+         "children": [
+          {
+           "id": "el_010T"
+          },
+          {
+           "id": "el_011T"
+          }
+         ]
+        },
+        {
+         "id": "el_012T"
+        },
+        {
+         "id": "el_013T"
+        }
+       ]
+      },
+      {
+       "id": "el_015C",
+       "children": [
+        {
+         "id": "el_005R",
+         "children": [
+          {
+           "id": "el_002C",
+           "children": [
+            {
+             "id": "el_001C"
+            }
+           ]
+          },
+          {
+           "id": "el_003C"
+          },
+          {
+           "id": "el_004C",
+           "children": [
+            {
+             "id": "el_001T"
+            },
+            {
+             "id": "el_002T"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "el_010R",
+         "children": [
+          {
+           "id": "el_007C",
+           "children": [
+            {
+             "id": "el_006C"
+            }
+           ]
+          },
+          {
+           "id": "el_008C"
+          },
+          {
+           "id": "el_009C",
+           "children": [
+            {
+             "id": "el_003T"
+            },
+            {
+             "id": "el_004T"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "el_014R",
+         "children": [
+          {
+           "id": "el_012C",
+           "children": [
+            {
+             "id": "el_011C"
+            }
+           ]
+          },
+          {
+           "id": "el_013C",
+           "children": [
+            {
+             "id": "el_005T"
+            },
+            {
+             "id": "el_006T"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "el_033C",
+       "children": [
+        {
+         "id": "el_014T"
+        },
+        {
+         "id": "el_026R",
+         "children": [
+          {
+           "id": "el_025C"
+          },
+          {
+           "id": "el_015T"
+          }
+         ]
+        },
+        {
+         "id": "el_028R",
+         "children": [
+          {
+           "id": "el_027C"
+          },
+          {
+           "id": "el_016T"
+          }
+         ]
+        },
+        {
+         "id": "el_030R",
+         "children": [
+          {
+           "id": "el_029C"
+          },
+          {
+           "id": "el_017T"
+          }
+         ]
+        },
+        {
+         "id": "el_032R",
+         "children": [
+          {
+           "id": "el_031C"
+          },
+          {
+           "id": "el_018T"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "el_034P"
+      },
+      {
+       "id": "el_039F",
+       "children": [
+        {
+         "id": "el_020T"
+        },
+        {
+         "id": "el_035B",
+         "children": [
+          {
+           "id": "el_021T"
+          }
+         ]
+        },
+        {
+         "id": "el_022T"
+        },
+        {
+         "id": "el_038R",
+         "children": [
+          {
+           "id": "el_036B",
+           "children": [
+            {
+             "id": "el_023T"
+            }
+           ]
+          },
+          {
+           "id": "el_024T"
+          },
+          {
+           "id": "el_037B",
+           "children": [
+            {
+             "id": "el_025T"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "selectableGroups": [
+    {
+     "id": "sgoffer",
+     "type": "product"
+    }
+   ],
+   "caption": "Førstegangstilbud"
+  }
+ ]
+}

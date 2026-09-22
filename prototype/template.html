@@ -86,6 +86,8 @@ body{
 .save p{margin:0;font-size:12.5px;line-height:1.42}
 .save .a{color:var(--sg-ink2)}
 .save .b{color:var(--sg-muted)}
+.altlink{background:none;border:0;padding:2px 0;cursor:pointer;font:inherit;font-size:12.5px;
+  font-weight:600;color:var(--sg-primary);text-decoration:underline;text-underline-offset:3px}
 .offerline{font-size:15px;font-weight:700;text-align:center;margin:0;color:var(--sg-ink)}
 .offerline span{color:var(--sg-muted)}
 .offerline i{font-style:normal;color:var(--sg-border);padding:0 6px}
@@ -298,8 +300,8 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
 <script>
 (function(){
   "use strict";
-  var SCREENS=["welcome","goal","pain","method","security","plan","paywall","offer"];
-  var LABELS=["Velkommen","Dit mål","Problemet","Sådan virker det","Sikkerhed","Din plan","Medlemskab","Årligt tilbud"];
+  var SCREENS=["welcome","goal","pain","method","security","plan","offer","paywall"];
+  var LABELS=["Velkommen","Dit mål","Problemet","Sådan virker det","Sikkerhed","Din plan","Dit tilbud","Alle medlemskaber"];
   var GOALS={
     fradrag:{label:"Glemte fradrag",
       planHead:'Vi starter med dine <em>glemte fradrag</em>.',
@@ -333,14 +335,14 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
   function panes(){return view.querySelectorAll(".pane");}
 
   SCREENS.forEach(function(id,n){
-    if(id==="offer"){
+    if(id==="paywall"){
       rail.appendChild(document.createElement("hr"));
       var h=document.createElement("p"); h.className="sect";
-      h.textContent="Separat flow"; rail.appendChild(h);
+      h.textContent="Alternativ vej"; rail.appendChild(h);
     }
     var b=document.createElement("button");
     b.type="button"; b.className="step"; b.dataset.step=String(n);
-    b.innerHTML='<span class="num">'+(id==="offer"?"\u2726":(n+1))+'</span><span>'+LABELS[n]+'</span>';
+    b.innerHTML='<span class="num">'+(id==="paywall"?"\u2261":(n+1))+'</span><span>'+LABELS[n]+'</span>';
     b.addEventListener("click",function(){go(n);});
     rail.appendChild(b);
   });
@@ -349,7 +351,7 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
     panes().forEach(function(p,n){p.classList.toggle("on",n===state.i);});
     rail.querySelectorAll(".step").forEach(function(b,n){
       b.setAttribute("aria-current",n===state.i?"true":"false");
-      b.classList.toggle("done",n<state.i&&SCREENS[state.i]!=="offer");
+      b.classList.toggle("done",n<state.i&&SCREENS[state.i]!=="paywall");
     });
     var g=GOALS[state.goal];
     document.getElementById("plan-head").innerHTML=g.planHead;

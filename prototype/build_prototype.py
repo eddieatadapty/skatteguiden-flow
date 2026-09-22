@@ -171,7 +171,7 @@ plan = f'''<div class="pane" data-id="plan"><div class="scroll">
     {bullet('Vi henter din indkomst og dine fradrag')}
     {bullet('Skatteteamet gennemgår din skat')}
   </div>
-</div>{footer('Se medlemskaber', go='paywall')}</div>'''
+</div>{footer('Se dit tilbud', go='offer')}</div>'''
 
 # ---------------------------------------------------------------- 7 paywall
 ROWS = [
@@ -282,6 +282,7 @@ offer = f"""<div class="pane" data-id="offer"><div class="scroll">
 </div><div class="footerbar">
   <p class="offerline">0 kr. i dag<i>·</i><span>derefter 790 kr./år</span></p>
   <button class="cta" type="button" data-buy>Start min gratis måned</button>
+  <button class="altlink" type="button" data-go="paywall">Se alle medlemskaber</button>
   <p class="legal">Ingen binding. Opsig når som helst i App Store.</p>
   {offer_legal}
 </div></div>"""
@@ -290,7 +291,7 @@ offer = f"""<div class="pane" data-id="offer"><div class="scroll">
 # ---------------------------------------------------------------- assemble
 html = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
 html = html.replace('<!--PANES-->',
-                    '\n'.join([welcome, goal, pain, method, security, plan, paywall, offer]))
+                    '\n'.join([welcome, goal, pain, method, security, plan, offer, paywall]))
 html = html.replace('__ICON_CheckCircle_34__', ico('CheckCircle', 34, 'fill'))
 html = html.replace('{{LOGO}}', data_uri(os.path.join(os.path.dirname(HERE), 'assets', 'asset-logo.png')))
 html = html.replace('{{HERO}}', data_uri(os.path.join(os.path.dirname(HERE), 'assets', 'asset-hero.png')))

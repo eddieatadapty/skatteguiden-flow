@@ -86,6 +86,8 @@ body{
 .save p{margin:0;font-size:12.5px;line-height:1.42}
 .save .a{color:var(--sg-ink2)}
 .save .b{color:var(--sg-muted)}
+.altlink{background:none;border:0;padding:2px 0;cursor:pointer;font:inherit;font-size:12.5px;
+  font-weight:600;color:var(--sg-primary);text-decoration:underline;text-underline-offset:3px}
 .offerline{font-size:15px;font-weight:700;text-align:center;margin:0;color:var(--sg-ink)}
 .offerline span{color:var(--sg-muted)}
 .offerline i{font-style:normal;color:var(--sg-border);padding:0 6px}
@@ -346,23 +348,7 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
     <div class="bullet mint"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg><span>Vi henter din indkomst og dine fradrag</span></div>
     <div class="bullet mint"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg><span>Skatteteamet gennemgår din skat</span></div>
   </div>
-</div><div class="footerbar"><button class="cta" type="button" data-go="paywall">Se medlemskaber</button></div></div>
-<div class="pane" data-id="paywall"><div class="scroll">
-  <div class="topbar"><span></span>
-    <button class="iconbtn right" type="button" data-close aria-label="Luk"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
-  </div>
-  <div class="group" style="gap:10px">
-    <span class="badge">Prøv 1 måned gratis</span>
-    <h2 class="h1" id="pay-head">Vælg dit medlemskab</h2>
-    <p class="sub">Gyldigt én gang. Opsig når som helst.</p>
-  </div>
-  <div class="group" role="radiogroup" aria-label="Medlemskab"><button class="plan" type="button" role="radio" aria-checked="false" data-plan="plus"><span class="body"><span class="name"><span class="h3">Plus</span><span class="tag">Mest populær</span></span><p class="small">Udvidet og hurtigere service — vi indberetter gratis.</p><span class="price"><b>79 kr.</b><span>/md</span></span><p class="peryear">eller 790 kr./år — spar 158 kr.</p></span><span class="ring"><i></i></span></button><button class="plan" type="button" role="radio" aria-checked="false" data-plan="standard"><span class="body"><span class="name"><span class="h3">Standard</span></span><p class="small">Få rettet din skat løbende af vores skatteteam.</p><span class="price"><b>39 kr.</b><span>/md</span></span><p class="peryear">eller 390 kr./år — spar 78 kr.</p></span><span class="ring"><i></i></span></button></div>
-  <p class="h3">Hvad får du?</p>
-  <div class="cmp"><table>
-    <thead><tr><th></th><th>Gratis</th><th>Standard</th><th class="plus">Plus</th></tr></thead>
-    <tbody><tr><td>Overblik over indkomst og skat</td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Først i køen til Tidlig Årsopgørelse</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Se om du betaler for meget</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Personlig opdatering hver måned</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Skatterådgivning inden for 2 hverdage</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Vi indberetter dine fradrag</td><td class="v"><span class="fee">20%</span></td><td class="v"><span class="fee">10%</span></td><td class="v"><span class="fee plus">Gratis</span></td></tr></tbody>
-  </table></div>
-</div><div class="footerbar"><button class="cta" type="button" data-buy>Prøv 1 måned gratis</button><p class="legal">Derefter fra 39 kr./md. Ingen binding — opsig når som helst.</p><div class="legalrow"><button class="linky" type="button" data-link="Gendanner tidligere køb fra App Store.">Gendan køb</button><span class="legal">·</span><button class="linky" type="button" data-link="Åbner skatteguiden.dk/juridiske-dokumenter.">Vilkår og privatliv</button></div></div></div>
+</div><div class="footerbar"><button class="cta" type="button" data-go="offer">Se dit tilbud</button></div></div>
 <div class="pane" data-id="offer"><div class="scroll">
   <div class="topbar"><span></span>
     <button class="iconbtn right" type="button" data-close aria-label="Luk"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
@@ -385,9 +371,26 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
 </div><div class="footerbar">
   <p class="offerline">0 kr. i dag<i>·</i><span>derefter 790 kr./år</span></p>
   <button class="cta" type="button" data-buy>Start min gratis måned</button>
+  <button class="altlink" type="button" data-go="paywall">Se alle medlemskaber</button>
   <p class="legal">Ingen binding. Opsig når som helst i App Store.</p>
   <div class="legalrow"><button class="linky" type="button" data-link="Gendanner tidligere køb fra App Store.">Gendan køb</button><span class="legal">·</span><button class="linky" type="button" data-link="Åbner skatteguiden.dk/juridiske-dokumenter.">Vilkår og privatliv</button></div>
 </div></div>
+<div class="pane" data-id="paywall"><div class="scroll">
+  <div class="topbar"><span></span>
+    <button class="iconbtn right" type="button" data-close aria-label="Luk"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
+  </div>
+  <div class="group" style="gap:10px">
+    <span class="badge">Prøv 1 måned gratis</span>
+    <h2 class="h1" id="pay-head">Vælg dit medlemskab</h2>
+    <p class="sub">Gyldigt én gang. Opsig når som helst.</p>
+  </div>
+  <div class="group" role="radiogroup" aria-label="Medlemskab"><button class="plan" type="button" role="radio" aria-checked="false" data-plan="plus"><span class="body"><span class="name"><span class="h3">Plus</span><span class="tag">Mest populær</span></span><p class="small">Udvidet og hurtigere service — vi indberetter gratis.</p><span class="price"><b>79 kr.</b><span>/md</span></span><p class="peryear">eller 790 kr./år — spar 158 kr.</p></span><span class="ring"><i></i></span></button><button class="plan" type="button" role="radio" aria-checked="false" data-plan="standard"><span class="body"><span class="name"><span class="h3">Standard</span></span><p class="small">Få rettet din skat løbende af vores skatteteam.</p><span class="price"><b>39 kr.</b><span>/md</span></span><p class="peryear">eller 390 kr./år — spar 78 kr.</p></span><span class="ring"><i></i></span></button></div>
+  <p class="h3">Hvad får du?</p>
+  <div class="cmp"><table>
+    <thead><tr><th></th><th>Gratis</th><th>Standard</th><th class="plus">Plus</th></tr></thead>
+    <tbody><tr><td>Overblik over indkomst og skat</td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Først i køen til Tidlig Årsopgørelse</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Se om du betaler for meget</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Personlig opdatering hver måned</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Skatterådgivning inden for 2 hverdage</td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="no" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></td><td class="v"><svg class="yes plus" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg></td></tr><tr><td>Vi indberetter dine fradrag</td><td class="v"><span class="fee">20%</span></td><td class="v"><span class="fee">10%</span></td><td class="v"><span class="fee plus">Gratis</span></td></tr></tbody>
+  </table></div>
+</div><div class="footerbar"><button class="cta" type="button" data-buy>Prøv 1 måned gratis</button><p class="legal">Derefter fra 39 kr./md. Ingen binding — opsig når som helst.</p><div class="legalrow"><button class="linky" type="button" data-link="Gendanner tidligere køb fra App Store.">Gendan køb</button><span class="legal">·</span><button class="linky" type="button" data-link="Åbner skatteguiden.dk/juridiske-dokumenter.">Vilkår og privatliv</button></div></div></div>
           <div class="finish" id="done">
             <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg></span>
             <h2 class="h1" style="font-size:22px">Velkommen til Skatteguiden</h2>
@@ -413,8 +416,8 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
 <script>
 (function(){
   "use strict";
-  var SCREENS=["welcome","goal","pain","method","security","plan","paywall","offer"];
-  var LABELS=["Velkommen","Dit mål","Problemet","Sådan virker det","Sikkerhed","Din plan","Medlemskab","Årligt tilbud"];
+  var SCREENS=["welcome","goal","pain","method","security","plan","offer","paywall"];
+  var LABELS=["Velkommen","Dit mål","Problemet","Sådan virker det","Sikkerhed","Din plan","Dit tilbud","Alle medlemskaber"];
   var GOALS={
     fradrag:{label:"Glemte fradrag",
       planHead:'Vi starter med dine <em>glemte fradrag</em>.',
@@ -448,14 +451,14 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
   function panes(){return view.querySelectorAll(".pane");}
 
   SCREENS.forEach(function(id,n){
-    if(id==="offer"){
+    if(id==="paywall"){
       rail.appendChild(document.createElement("hr"));
       var h=document.createElement("p"); h.className="sect";
-      h.textContent="Separat flow"; rail.appendChild(h);
+      h.textContent="Alternativ vej"; rail.appendChild(h);
     }
     var b=document.createElement("button");
     b.type="button"; b.className="step"; b.dataset.step=String(n);
-    b.innerHTML='<span class="num">'+(id==="offer"?"\u2726":(n+1))+'</span><span>'+LABELS[n]+'</span>';
+    b.innerHTML='<span class="num">'+(id==="paywall"?"\u2261":(n+1))+'</span><span>'+LABELS[n]+'</span>';
     b.addEventListener("click",function(){go(n);});
     rail.appendChild(b);
   });
@@ -464,7 +467,7 @@ h2.h1 em{font-style:normal;color:var(--sg-primary)}
     panes().forEach(function(p,n){p.classList.toggle("on",n===state.i);});
     rail.querySelectorAll(".step").forEach(function(b,n){
       b.setAttribute("aria-current",n===state.i?"true":"false");
-      b.classList.toggle("done",n<state.i&&SCREENS[state.i]!=="offer");
+      b.classList.toggle("done",n<state.i&&SCREENS[state.i]!=="paywall");
     });
     var g=GOALS[state.goal];
     document.getElementById("plan-head").innerHTML=g.planHead;

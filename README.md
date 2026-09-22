@@ -3,6 +3,10 @@
 Two Adapty flows for [skatteguiden.dk](https://www.skatteguiden.dk), plus a clickable
 prototype. Danish (`da`), single locale.
 
+### ▶ [Open the clickable demo](https://eddieatadapty.github.io/skatteguiden-flow/)
+
+Click straight through all eight screens in the browser — no install, no login.
+
 ![Onboarding, 7 screens](docs/onboarding-7-screens.png)
 
 ## The flows
@@ -46,7 +50,7 @@ absent on device.
 
 ## Prototype
 
-`prototype/skatteguiden-prototype.html` — self-contained, no build step, no network beyond the
+`index.html` (published at the Pages URL above) — self-contained, no build step, no network beyond the
 Google Fonts link. Open it and click through. Pick a different goal on Trin 1 and the headlines
 on Trin 5 and the paywall rewrite themselves; that is the `switch` branching, which a static
 render cannot show.
@@ -59,7 +63,8 @@ uploaded to the Flow Builder (see *Known gaps*).
 ```
 flows/       the two configs, exactly as saved in Adapty
 src/         the generators that produce them
-prototype/   template + generator + the built page
+index.html   the built prototype (what GitHub Pages serves)
+prototype/   its template + generator
 assets/      logo, hero, Phosphor icon set
 docs/        renders
 ```

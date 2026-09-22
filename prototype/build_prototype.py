@@ -296,6 +296,6 @@ html = html.replace('{{LOGO}}', data_uri(os.path.join(os.path.dirname(HERE), 'as
 html = html.replace('{{HERO}}', data_uri(os.path.join(os.path.dirname(HERE), 'assets', 'asset-hero.png')))
 
 assert '{{' not in html and '__ICON' not in html, 'unsubstituted token left'
-out = os.path.join(HERE, 'skatteguiden-prototype.html')
+out = os.path.join(os.path.dirname(HERE), 'index.html')
 open(out, 'w', encoding='utf-8').write(html)
 print('wrote %s  (%.0f KB)' % (out, len(html.encode()) / 1024))
